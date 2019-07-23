@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Congress House</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment"><img class="center-block" class="img1" src="Images/logo%20senado%20EEUU.jpg" alt="Senado EEUU"></a>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Senate EEUU</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="home.html">Congress 113
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="house.html">House</a></li>
+                        <li><a href="senate.html">Senate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="attendance.html">Attendance
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="attendance-house.html">House</a></li>
+                        <li><a href="attendance-senate.html">Senate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="attendance.html">Party Loyalty
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="attendance-house.html">House</a></li>
+                        <li><a href="attendance-senate.html">Senate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <h2>Congressmen</h2>
+        <div class="psenate">
+            <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+            <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p><br>
+        </div>
+        <label class="titlabel">Select Party:</label>
+        <label class="labels">Democrat</label>
+        <input class="party-chck-house" id="democrat" onchange="ambosFiltrosHouse()" type="checkbox" name="democrat" value="D" checked>
+        <label class="labels">Republican</label>
+        <input class="party-chck-house" id="republican" onchange="ambosFiltrosHouse()" type="checkbox" name="republican" value="R" checked>
+        <label class="labels">Independent</label>
+        <input class="party-chck-house" id="independent" onchange="ambosFiltrosHouse()" type="checkbox" name="party" value="I" checked><br><br>
+        <div class="divselect">
+            <label class="titlabel" class="labelSelect">Select State:</label>
+            <select id="selectEstadosHouse" class="stateClass" name="states" onchange="ambosFiltrosHouse()">
+                <option value="" selected></option>
+            </select><br>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Party</th>
+                    <th>State</th>
+                    <th>Seniority</th>
+                    <th>Porcentage</th>
+                </tr>
+            </thead>
+            <tbody id=datosHouses>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!--        <script type="text/javascript" src ="JS/congress-113-house.js"></script>-->
+    <script type="text/javascript" src="JS/house.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <div>
+        <footer class="container-fluid bg-4 text-center">
+            <p>2019 TGIF | All Rights Reserved ® <a href="mailto:" info@tgif.net>info@tgif.net</a></p>
+        </footer>
+    </div>
+</body>
+</html>

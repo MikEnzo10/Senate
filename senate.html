@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Congress Senate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment"><img class="center-block" class="img1" src="Images/logo%20senado%20EEUU.jpg" alt="Senado EEUU"></a>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Senate EEUU</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="home.html">Congress 113
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="house.html">House</a></li>
+                        <li><a href="senate.html">Senate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="attendance.html">Attendance
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="attendance-house.html">House</a></li>
+                        <li><a href="attendance-senate.html">Senate</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="attendance.html">Party Loyalty
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="loyalty-house.html">House</a></li>
+                        <li><a href="loyalty-senate.html">Senate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div>
+        </div>
+    </header>
+    <!--Table container-->
+    <div>
+        <h2>Senators</h2>
+        <div class="psenate">
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p><br><br>
+        </div>
+        <label class="titlabel">Select Party:</label>
+        <label class="labels">Democrat</label>
+        <input class="party-chck" id="democrat" onchange="ambosFiltros()" type="checkbox" name="democrat" value="D" checked>
+        <label class="labels">Republican</label>
+        <input class="party-chck" id="republican" onchange="ambosFiltros()" type="checkbox" name="republican" value="R" checked>
+        <label class="labels">Independent</label>
+        <input class="party-chck" id="independent" onchange="ambosFiltros()" type="checkbox" name="party" value="I" checked><br><br>
+        <div class="divselect">
+            <label class="labelSelect">Select State:</label>
+            <select id="selectEstados" class="stateClass" name="states" onchange="ambosFiltros()">
+                <option value="" selected></option>
+            </select><br>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="fullname">Full Name</th>
+                    <th class="party">Party</th>
+                    <th class="State">State</th>
+                    <th class="Seniority">Seniority</th>
+                    <th class="Porcentage">Porcentage</th>
+                </tr>
+            </thead>
+            <tbody id="datosSenado">
+            </tbody>
+        </table>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!--        <script type="text/javascript" src ="JS/congress-113-senate.js"></script>-->
+    <script type="text/javascript" src="JS/senate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <div>
+        <footer class="container-fluid bg-4 text-center">
+            <p>2019 TGIF | All Rights Reserved ® <a href="mailto:" info@tgif.net>info@tgif.net</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.img1:hover {
+    
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;};
+    
+    
+
+.titcheck {
+    font-size:19px;
+    margin-right: 10px
+    
+}
+
+
+body {
+    margin:auto;
+    width: 90%;
+    
+}
+
+.bg-4 { 
+  background-color: #2f2f2f;
+  color: #ffffff;
+  border-radius: 5px;
+    
+}
+
+p {
+    font-family:"Calibri";
+    font-size: 17px
+
+}
+
+.labels {
+    padding: 5px;
+    font-family: "Calibri";
+    font-size:16px
+        
+    
+}
+
+
+
+.titlabel {
+    font-size:18px;
+    font-family: "Calibri"
+}
+
+.divselect {
+    float:right;
+    margin-top: -50px
+}
+
+.psenate {
+    width: 70%;
+}
+
+.psenatehome {
+    width: 70%;
+}
+
+input {
+    font-family: "Calibri"
+}
+
+h2 {
+    font-family: "Calibri";
+    font-size: 35px;
+    
+}
+
+
+.flex-container {
+    display: flex;
+}
